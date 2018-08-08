@@ -1,0 +1,72 @@
+<div class="section section2">
+  <div class="container">
+    <div class="info">
+
+      <div class="title">
+        <span>{{"{"}}</span>
+        <h2 class="text-center">Introducing DeBleve</h2>
+        <span>{{ "}" }}</span>
+      </div>
+
+      <p>De-Bleve is a portable, remotely operated non-invasive drilling product capable of safely discharging most pressurized
+        containers. The De-BLEVE not only provides enhanced safety, but also reduces the cost of hazardous material releases.
+      </p>
+
+      <!-- <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal title</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+        </div>
+      </ng-template> -->
+
+      <div class="row img-row">
+
+        <div *ngFor="let image of debleveImages" class="col-sm-4">
+
+          <ng-template #content let-c="close" let-d="dismiss">
+            <div class="modal-header">
+              <h4 class="modal-title">{{ image.title }}</h4>
+              <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="{{image.url}}" alt="" class="img-fluid" (click)="openLg(content)">
+              <p class="mt-2">{{image.description}}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+            </div>
+          </ng-template>
+
+          <div class="img-mat">
+            <img src="{{image.url}}" alt="" class="img-fluid" (click)="openLg(content)">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ADDING CAROUSEL FOR MOBILE -->
+      <div class="carousel">
+        <ngb-carousel *ngIf="debleveImages">
+          <ng-template *ngFor="let image of debleveImages" ngbSlide>
+            <img src="{{image.url}}" alt="{{image.title}}" class="img-fluid">
+            <div class="carousel-caption">
+              <h3>{{ image.title }}</h3>
+              <p>{{ image.description }}</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+div.not-found-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+div.not-found-main span {
+  font-size: 2em;
+  display: block;
+  font-family: "Montserrat";
+}
+
+div.not-found-main span.error404 {
+  font-size: 4em;
+  color: #cc1814;
+  font-weight: 700;
+}
+/*# sourceMappingURL=not-found.component.css.map */

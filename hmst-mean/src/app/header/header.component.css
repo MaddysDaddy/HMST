@@ -1,0 +1,151 @@
+div.section1 {
+  background-image: url("../../assets/images/dark_barrel_background_small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.section1 h1 {
+  font-size: 7em;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #ffff00;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.75);
+  -webkit-animation: 2s fadeInLeft ease;
+          animation: 2s fadeInLeft ease;
+}
+
+div.section1 h1 span {
+  font-weight: 300;
+  color: #fff;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+  }
+  50% {
+    color: white;
+  }
+}
+
+@keyframes pulse {
+  0% {
+  }
+  50% {
+    color: white;
+  }
+}
+
+div.section1 p.subheading {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.85em;
+  color: #fff;
+  font-weight: 400;
+  -webkit-animation: 2s fadeInUp ease;
+          animation: 2s fadeInUp ease;
+}
+
+div.section1 div.learn-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 1em 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+div.section1 div.learn-more i {
+  display: block;
+}
+
+div.section1 .main-logo {
+  max-width: 250px;
+  -webkit-animation: 2s fadeInDown ease;
+          animation: 2s fadeInDown ease;
+}
+/*# sourceMappingURL=header.component.css.map */

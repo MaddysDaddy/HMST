@@ -1,0 +1,23 @@
+.section {
+  background-color: #D4D42A;
+  color: #fff;
+}
+
+.section h4 {
+  font-weight: normal;
+  font-size: 1.25em;
+  color: #7F7F00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section span {
+  color: #7F7F00;
+}
+
+.section .table th,
+.section .table td {
+  border-top: none;
+  padding: .25rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=tech-specs.component.css.map */

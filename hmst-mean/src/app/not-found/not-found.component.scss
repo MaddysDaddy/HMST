@@ -1,0 +1,21 @@
+@import '../../_variables';
+
+div.not-found-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  span {
+    font-size: 2em;
+    display: block;
+    font-family: $main-font;
+  }
+
+  span.error404 {
+    font-size: 4em;
+    color: $red;
+    font-weight: 700;
+  }
+}

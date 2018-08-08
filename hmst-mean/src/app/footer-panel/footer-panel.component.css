@@ -1,0 +1,81 @@
+.footer {
+  background-color: #7F7F00;
+}
+
+.footer img {
+  max-width: 50%;
+}
+
+.footer .wrapper {
+  margin: 1em 0;
+}
+
+.footer span {
+  display: block;
+  color: #333;
+}
+
+.footer span.company-name {
+  font-weight: 700;
+}
+
+.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.footer ul li a:link,
+.footer ul li a:visited {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  padding: .5em 0;
+  font-size: 16px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer ul li a:hover,
+.footer ul li a:focus {
+  color: #00f9ff;
+}
+
+.footer ul li:last-child {
+  border-bottom: none;
+}
+
+.footer .navigation {
+  padding-right: 20%;
+}
+
+.footer .social-navigation {
+  min-width: 50%;
+}
+
+.footer .social-navigation li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: none;
+}
+
+.footer .social-navigation li i {
+  margin-right: .5em;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-nav-panel {
+    margin: 1.5em 0;
+  }
+}
+/*# sourceMappingURL=footer-panel.component.css.map */

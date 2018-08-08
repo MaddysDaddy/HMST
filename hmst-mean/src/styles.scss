@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i');
+
+//Color Palette
+$blue: #199EFF;
+$light-blue: #00f9ff;
+$neon-green:#1aff40;
+$orange: #ff6d40;
+$yellow: #ffff00;
+$gray: #e6e6e6;
+$red: #cc1814;
+
+$main-font: 'Montserrat';
+$accent-font: 'Playfair Display';
+
+.section {
+  padding:2.5em 0;
+
+  h2 {
+      font-size: 3em;
+      font-family: $main-font;
+      margin:0;
+      margin-top: .16em;
+      font-weight: 600;
+  }
+
+  p, ul, li {
+      font-size: 1.125em !important;
+  }
+
+  img {
+      // border-radius: 5px;
+      // box-shadow: 2px 4px 5px rgba(0,0,0,.35);
+  }
+
+  div.title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5em;
+
+      h2 {
+          font-family: $accent-font;
+          font-weight: 300;
+          font-style: italic;
+      }
+
+      span {
+          font-size: 5em;
+          font-weight: 300 !important;
+          font-family: Helvetica, Arial, sans-serif;
+          color:$red;
+          color:#7F7F00;
+      }
+  }
+
+}

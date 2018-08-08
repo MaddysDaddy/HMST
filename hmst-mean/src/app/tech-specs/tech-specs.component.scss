@@ -1,0 +1,21 @@
+@import '../../_variables';
+.section {
+  background-color: #D4D42A;
+  color: #fff;
+  h4 {
+    // font-family: $accent-font;
+    font-weight: normal;
+    font-size: 1.25em; // font-style: italic;
+    color: #7F7F00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  }
+  span {
+    color: #7F7F00;
+  }
+  .table th,
+  .table td {
+    border-top: none;
+    padding: .25rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  }
+}

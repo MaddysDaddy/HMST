@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,GAAG,AAAA,eAAe,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,KAAK;CAad;;AAlBD,AAOE,GAPC,AAAA,eAAe,CAOhB,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;EACd,OAAO,EAAE,KAAK;EACd,WAAW,ECJH,YAAY;CDKrB;;AAXH,AAaE,GAbC,AAAA,eAAe,CAahB,IAAI,AAAA,SAAS,CAAC;EACZ,SAAS,EAAE,GAAG;EACd,KAAK,ECXH,OAAO;EDYT,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "not-found.component.scss",
+        "../../_variables.scss"
+    ],
+    "names": [],
+    "file": "not-found.component.css"
+}

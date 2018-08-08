@@ -1,0 +1,21 @@
+.section2a {
+  background-color: #FFCE0D;
+  background-color: #333;
+  background-image: url("../../assets/images/dark_barrels_background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section2a div.title h2 {
+  color: #ffff00;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 300;
+}
+
+.section2a li {
+  margin-bottom: .5em;
+  color: #fff;
+}
+/*# sourceMappingURL=highlights.component.css.map */
