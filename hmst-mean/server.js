@@ -5,6 +5,12 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const port = process.env.PORT || 8000;
 
+// const envs = require('dotenv').config({
+//   path: path.join(__dirname, '/.env')
+// });
+
+const envs = require('dotenv').config();
+
 const app = express();
 
 // Serve it up with angular

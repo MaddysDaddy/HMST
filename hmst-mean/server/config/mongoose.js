@@ -1,11 +1,9 @@
 const mongoose = require('mongoose');
 const path = require('path');
 const fs = require('fs');
-const dbinfo = require('../../hmst.config');
 
-// console.log(dbinfo);
 
-mongoose.connect('mongodb://localhost:27017/hmst', {
+mongoose.connect(process.env.DB_HOST, {
   useNewUrlParser: true,
 });
 mongoose.connection.on('connected', () => console.log('connected to MongoDB!'));

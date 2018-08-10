@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-as-promised');
 const validator = require('validator');
 const uniqueValidator = require('mongoose-unique-validator');
-const activationCode = 'activate';
+const activationCode = process.env.ACTIVATION_CODE;
 
 const userSchema = mongoose.Schema({
   firstName: {
