@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  key: string = environment.testKey;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(this.key);
   }
 
 }

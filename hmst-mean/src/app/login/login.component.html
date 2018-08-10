@@ -1,3 +1,57 @@
-<p>
-  login works!
-</p>
+<div class="container">
+
+  <h1 class="text-center">HMST Admin Login</h1>
+
+  <form (submit)="login($event, loginForm)" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name="email" class="form-control" [(ngModel)]="loginUser.email" #email="ngModel" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" name="password" [(ngModel)]="loginUser.password" #password="ngModel" class="form-control" required>
+    </div>
+
+    <button [disabled]="!loginForm.valid" class="btn btn-primary" type="submit">Login</button>
+  </form>
+
+  <hr>
+
+  <div *ngIf="registrationErrors" class="registration-errors">
+    <ul>
+      <li *ngFor="let error of registrationErrors">
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+  <form *ngIf="!isSuperUser" (submit)="register($event, registerForm)" #registerForm="ngForm">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" [(ngModel)]="registerUser.firstName" class="form-control" required #firstName="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" [(ngModel)]="registerUser.lastName" class="form-control" required #lastName="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name="email" [(ngModel)]="registerUser.email" class="form-control" required #email="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" name="password" [(ngModel)]="registerUser.password" class="form-control" required #password="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <label for="acode">Activation Code:</label>
+      <input type="text" name="acode" [(ngModel)]="registerUser.acode" class="form-control" required #acode="ngModel">
+    </div>
+
+    <button [disabled]="!registerForm.valid" class="btn btn-primary" type="sumbit">Regsiter</button>
+  </form>
+</div>

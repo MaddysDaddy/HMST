@@ -1,3 +1,4 @@
+import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -20,6 +21,11 @@ const routes: Routes = [
     path: 'admin',
     pathMatch: 'full',
     component: LoginComponent
+  },
+  {
+    path: 'admin/portal',
+    pathMatch: 'full',
+    component: AdminComponent
   },
   {
     path: '**',

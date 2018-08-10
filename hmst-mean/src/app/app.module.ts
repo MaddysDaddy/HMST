@@ -1,3 +1,5 @@
+import { HttpModule } from '@angular/http';
+import { AuthService } from './services/auth.service';
 import { VideoPanelComponent } from './video-panel/video-panel.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -15,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TechSpecsComponent } from './tech-specs/tech-specs.component';
+import { CookieModule } from 'ngx-cookie';
 
 @NgModule({
   declarations: [
@@ -35,9 +38,13 @@ import { TechSpecsComponent } from './tech-specs/tech-specs.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpModule,
+    CookieModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
